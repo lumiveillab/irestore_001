@@ -171,22 +171,6 @@
     }
     .timeline-item:last-child::after { display: none; }
 
-    /* Image placeholder */
-    .img-placeholder {
-      background: var(--cream);
-      border: 1px solid var(--rule);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 0.5rem;
-      color: var(--muted);
-      font-family: 'DM Sans', sans-serif;
-      font-size: 0.8125rem;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-    }
-
     /* Fade-in on scroll */
     .fade-in {
       opacity: 0;
@@ -248,9 +232,7 @@
   <!-- Reading progress -->
   <div id="progress-bar" style="width:0%"></div>
 
-  <!-- ═══════════════════════════════════════════
-       MASTHEAD
-  ════════════════════════════════════════════ -->
+  <!-- MASTHEAD -->
   <header class="masthead px-6 py-4">
     <div class="max-w-3xl mx-auto flex items-center justify-between">
       <span class="kicker">Independent Health Writing</span>
@@ -258,9 +240,7 @@
     </div>
   </header>
 
-  <!-- ═══════════════════════════════════════════
-       STICKY NAV (minimal)
-  ════════════════════════════════════════════ -->
+  <!-- STICKY NAV -->
   <nav class="sticky-nav px-6 py-3 hidden md:block">
     <div class="max-w-3xl mx-auto flex items-center justify-between">
       <span class="sans text-xs text-gray-400 tracking-wide">The Night I Almost Started Finasteride</span>
@@ -270,55 +250,39 @@
     </div>
   </nav>
 
-  <!-- ═══════════════════════════════════════════
-       HERO
-  ════════════════════════════════════════════ -->
+  <!-- HERO -->
   <main>
     <article class="max-w-3xl mx-auto px-6 pt-14 pb-8">
 
-      <!-- Kicker + Date -->
       <div class="flex items-center gap-4 mb-6">
         <span class="kicker">Personal Essay</span>
         <span style="color:var(--rule)">—</span>
         <span class="kicker">Hair Loss Treatment</span>
       </div>
 
-      <!-- Headline -->
       <h1 class="text-4xl md:text-5xl mb-6" style="color:var(--ink)">
         The Night I Almost Started Finasteride (And What I Did Instead)
       </h1>
 
-      <!-- Deck / subheadline -->
       <p class="sans text-lg md:text-xl mb-8" style="color:var(--muted); line-height:1.55; font-weight:300;">
         Three years on Minoxidil. One midnight Reddit spiral. And the follicle science that finally made the dependency make sense — and gave me a way out.
       </p>
 
-      <!-- Byline -->
+      <!-- img_01: Byline -->
       <div class="flex items-center gap-4 mb-8 pb-8" style="border-bottom: 1px solid var(--rule)">
-        <!-- IMAGE SUGGESTION 1: Author avatar — a candid, slightly blurred photo of a man in his late 30s,
-             casual shirt, natural indoor lighting. NOT a headshot. Should feel like a real person, not a stock model. -->
-        <div class="img-placeholder w-12 h-12 rounded-full flex-shrink-0">
-          <span style="font-size:0.6rem">Photo</span>
-        </div>
+        <img src="img/img_01.jpg" alt="Author" class="w-12 h-12 rounded-full flex-shrink-0 object-cover shadow-sm">
         <div>
           <p class="sans text-sm font-medium mb-0" style="color:var(--ink)">Written by a former Minoxidil user</p>
           <p class="sans text-xs mb-0" style="color:var(--muted)">Independent writer · 3-year hair loss research journey</p>
         </div>
       </div>
 
-      <!-- Hero image -->
-      <!-- IMAGE SUGGESTION 2: A man in his late 30s sitting on the edge of his bed at night, wrinkled t-shirt,
-           dim warm lamp light. He's staring at a half-empty brown Minoxidil bottle on his nightstand.
-           His phone is face-down next to it. His expression is tired, not angry — just done.
-           Shot from a slight distance. Very real, very quiet. No studio lighting. -->
-      <div class="img-placeholder w-full h-72 md:h-96 mb-10 fade-in" style="border-radius:2px;">
-        <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
-        <span>Image 1 — Bedroom nightstand scene (see suggestion above)</span>
+      <!-- img_02: Hero image -->
+      <div class="w-full mb-10 fade-in">
+        <img src="img/img_02.jpg" alt="Nighttime reflection" class="w-full h-72 md:h-96 object-cover rounded-sm shadow-sm">
       </div>
 
-      <!-- ───────────────────────────────────────
-           PART 1 — THE OPENING STORY
-      ──────────────────────────────────────── -->
+      <!-- PART 1 -->
       <section class="fade-in mb-14">
         <div class="ornamental-rule mb-10">
           <span class="section-num">Part One</span>
@@ -353,9 +317,7 @@
         </p>
       </section>
 
-      <!-- ───────────────────────────────────────
-           PART 2 — THE MECHANISM EDUCATION
-      ──────────────────────────────────────── -->
+      <!-- PART 2 -->
       <section class="fade-in mb-14">
         <div class="ornamental-rule mb-10">
           <span class="section-num">Part Two</span>
@@ -377,12 +339,9 @@
           The moment you stop, the mechanism stops. Your follicles don't remember what they learned. There's no lasting change to the follicle environment. You were essentially keeping the lights on with a generator — the moment you unplug it, the room goes dark. Often faster and harder than it went dark the first time.
         </p>
 
-        <!-- IMAGE SUGGESTION 3: Close-up of a white shower drain with a small cluster of dark hair caught in it,
-             water still slowly running. Slightly steamy, plain tile. Shot from slightly above.
-             Still, quiet, no person visible. The kind of image anyone with hair loss has stood over too long. -->
-        <div class="img-placeholder w-full h-56 my-10 fade-in" style="border-radius:2px;">
-          <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
-          <span>Image 2 — Shower drain scene (see suggestion above)</span>
+        <!-- img_03: Shower scene -->
+        <div class="w-full my-10 fade-in">
+          <img src="img/img_03.jpg" alt="Shower drain" class="w-full h-56 object-cover rounded-sm">
         </div>
 
         <p>
@@ -447,9 +406,7 @@
         </p>
       </section>
 
-      <!-- ───────────────────────────────────────
-           PART 3 — THE GRAVEYARD
-      ──────────────────────────────────────── -->
+      <!-- PART 3 -->
       <section class="fade-in mb-14">
         <div class="ornamental-rule mb-10">
           <span class="section-num">Part Three</span>
@@ -465,10 +422,6 @@
 
         <p>
           Rosemary oil. Pumpkin seed capsules. Biotin megadoses. Castor oil. Saw palmetto. The $340 supplement with the celebrity endorsement and the clinical study funded entirely by the company that makes it.
-        </p>
-
-        <p>
-          I tried most of them. Not because I was naive — I knew the evidence was thin. But because when you're watching your hairline move and your options feel like "take a hormone drug forever" or "go bald," you start filling the gap with anything that sounds remotely reasonable.
         </p>
 
         <!-- Two-column contrast -->
@@ -504,9 +457,7 @@
         <p>That search is what led me to the <strong>iRESTORE Scalp Serum.</strong></p>
       </section>
 
-      <!-- ───────────────────────────────────────
-           PART 4 — THE PRODUCT
-      ──────────────────────────────────────── -->
+      <!-- PART 4 -->
       <section class="fade-in mb-14">
         <div class="ornamental-rule mb-10">
           <span class="section-num">Part Four</span>
@@ -514,13 +465,9 @@
 
         <h2 class="text-2xl md:text-3xl mb-6">Why This Formulation Specifically</h2>
 
-        <!-- IMAGE SUGGESTION 4: The iRESTORE Scalp Serum bottle sitting on a clean bathroom shelf or stone surface,
-             soft natural morning light coming from the left. Simple background — maybe slightly out of focus white tile
-             or a wooden shelf. The serum is the only object in frame. Clean, real, not a studio product shot.
-             No lighting rigs. Should look like something someone actually owns and uses. -->
-        <div class="img-placeholder w-full h-64 mb-10 fade-in" style="border-radius:2px;">
-          <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
-          <span>Image 3 — Product on shelf, natural light (see suggestion above)</span>
+        <!-- img_04: Product shot -->
+        <div class="w-full mb-10 fade-in">
+          <img src="img/img_04.jpg" alt="iRESTORE Scalp Serum" class="w-full h-64 object-cover rounded-sm shadow-sm">
         </div>
 
         <p>
@@ -553,26 +500,18 @@
           </div>
         </div>
 
-        <p>
-          And critically — no propylene glycol. No heavy alcohols. No greasy carrier base that makes twice-daily application feel like punishment.
-        </p>
-
         <blockquote class="pull-quote my-10 fade-in">
-          This is a formulation built around the mechanism, not around the marketing story. Those are different things. After enough time reading ingredient panels, you can tell the difference.
+          This is a formulation built around the mechanism, not around the marketing story. After enough time reading ingredient panels, you can tell the difference.
         </blockquote>
       </section>
 
-      <!-- ───────────────────────────────────────
-           PART 5 — THE TIMELINE
-      ──────────────────────────────────────── -->
+      <!-- PART 5 -->
       <section class="fade-in mb-14">
         <div class="ornamental-rule mb-10">
           <span class="section-num">Part Five</span>
         </div>
 
         <h2 class="text-2xl md:text-3xl mb-8">What the First 90 Days Actually Looked Like</h2>
-
-        <p class="mb-10">I want to manage expectations here, because one of the things that erodes trust in this space is the gap between what marketing implies and what reality delivers.</p>
 
         <!-- Timeline -->
         <div class="space-y-8 mb-10">
@@ -590,13 +529,9 @@
           </div>
         </div>
 
-        <!-- IMAGE SUGGESTION 5: A man in his early 40s at a kitchen table on a Sunday morning.
-             Both hands around a coffee mug. Soft natural light from a window. On the table beside the mug:
-             a small dark serum bottle, cap off. No Minoxidil bottle. His posture is calm and settled.
-             Hair slightly imperfect at the temples — real, not styled. The feeling is quiet relief, not triumph. -->
-        <div class="img-placeholder w-full h-72 my-10 fade-in" style="border-radius:2px;">
-          <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
-          <span>Image 4 — Sunday morning kitchen scene (see suggestion above)</span>
+        <!-- img_05: Kitchen scene -->
+        <div class="w-full my-10 fade-in">
+          <img src="img/img_05.jpg" alt="Sunday morning kitchen" class="w-full h-72 object-cover rounded-sm shadow-sm">
         </div>
 
         <blockquote class="pull-quote my-10 fade-in">
@@ -604,17 +539,13 @@
         </blockquote>
       </section>
 
-      <!-- ───────────────────────────────────────
-           PART 6 — WHO IT'S FOR
-      ──────────────────────────────────────── -->
+      <!-- PART 6 -->
       <section class="fade-in mb-14">
         <div class="ornamental-rule mb-10">
           <span class="section-num">Part Six</span>
         </div>
 
         <h2 class="text-2xl md:text-3xl mb-6">Who This Is Actually For</h2>
-
-        <p>I want to be direct here, because the iRESTORE Scalp Serum is not for everyone, and overclaiming helps nobody.</p>
 
         <div class="space-y-4 my-10">
           <div class="p-5 fade-in" style="background:var(--cream); border-left:3px solid var(--accent); border-radius:0 2px 2px 0;">
@@ -633,36 +564,12 @@
             <p class="sans text-sm font-semibold mb-1" style="color:var(--ink)">Prevention-focused buyers who've noticed early thinning</p>
             <p class="sans text-sm mb-0" style="color:var(--muted);">This is where topical follicle support has the highest ceiling. The earlier you stabilize the environment, the more you have to protect. Prevention is smarter than rescue — every time.</p>
           </div>
-          <div class="p-5 fade-in" style="background:var(--cream); border-left:3px solid var(--accent); border-radius:0 2px 2px 0;">
-            <p class="sans text-sm font-semibold mb-1" style="color:var(--ink)">The natural-alternative graveyard survivor</p>
-            <p class="sans text-sm mb-0" style="color:var(--muted);">You tried the rosemary oil, the biotin stack, the beautiful packaging. You need something with actual clinical backing — without crossing into prescription territory.</p>
-          </div>
         </div>
-
-        <h2 class="text-2xl md:text-3xl mb-6 mt-14">One More Thing Before You Decide</h2>
-
-        <p>
-          I've been in enough hair loss forums to know the objection forming in your mind right now.
-        </p>
-
-        <p class="italic" style="color:var(--muted)">"If it works, why isn't everyone talking about it?"</p>
-
-        <p>It's a fair question. Here's the honest answer:</p>
-
-        <p>
-          The hair loss conversation is dominated by two categories: pharmaceutical treatments with massive marketing budgets, and gimmick products with influencer budgets. The middle ground — clinical-grade topical formulations with real mechanism science behind them — exists, but it's quiet.
-        </p>
-
-        <p>
-          It doesn't have a pharmaceutical rep visiting your dermatologist. It doesn't have a celebrity posting about it on Instagram with a discount code. What it has is the ingredient data. And for this audience — for people who make decisions based on mechanism and clinical reasoning rather than packaging and celebrity endorsements — that's the only currency that actually matters.
-        </p>
       </section>
 
     </article>
 
-    <!-- ═══════════════════════════════════════════
-         CTA SECTION
-    ════════════════════════════════════════════ -->
+    <!-- CTA SECTION -->
     <section id="get-it" class="cta-section px-6 py-20 fade-in">
       <div class="max-w-2xl mx-auto text-center">
         <p class="sans text-xs tracking-widest mb-6" style="color:#8a9e8f; text-transform:uppercase; letter-spacing:0.2em;">The Bottom Line</p>
@@ -675,22 +582,6 @@
           No prescription. No hormone suppression. No six-week shed to survive. A clinical formulation, built around a real mechanism, that you apply in under two minutes every morning.
         </p>
 
-        <!-- Proof points -->
-        <div class="grid grid-cols-3 gap-6 mb-12 max-w-lg mx-auto">
-          <div class="text-center">
-            <p class="sans text-2xl font-semibold mb-1" style="color:var(--warm-white)">3%</p>
-            <p class="sans text-xs" style="color:#8a9e8f;">Redensyl — therapeutic dose</p>
-          </div>
-          <div class="text-center">
-            <p class="sans text-2xl font-semibold mb-1" style="color:var(--warm-white)">0</p>
-            <p class="sans text-xs" style="color:#8a9e8f;">Hormones altered</p>
-          </div>
-          <div class="text-center">
-            <p class="sans text-2xl font-semibold mb-1" style="color:var(--warm-white)">~2 min</p>
-            <p class="sans text-xs" style="color:#8a9e8f;">Daily application time</p>
-          </div>
-        </div>
-
         <a href="#" class="cta-btn text-base mb-6 inline-block">
           Check Current Availability &amp; Pricing →
         </a>
@@ -701,9 +592,7 @@
       </div>
     </section>
 
-    <!-- ═══════════════════════════════════════════
-         DISCLAIMER
-    ════════════════════════════════════════════ -->
+    <!-- DISCLAIMER -->
     <footer class="px-6 py-12" style="background:var(--cream); border-top:1px solid var(--rule);">
       <div class="max-w-3xl mx-auto">
         <p class="sans text-xs mb-4" style="color:var(--muted); line-height:1.7;">
@@ -717,11 +606,7 @@
 
   </main>
 
-  <!-- ═══════════════════════════════════════════
-       JAVASCRIPT
-  ════════════════════════════════════════════ -->
   <script>
-    // Reading progress bar
     window.addEventListener('scroll', () => {
       const doc = document.documentElement;
       const scrollTop = doc.scrollTop || document.body.scrollTop;
@@ -730,7 +615,6 @@
       document.getElementById('progress-bar').style.width = progress + '%';
     });
 
-    // Fade-in on scroll
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
