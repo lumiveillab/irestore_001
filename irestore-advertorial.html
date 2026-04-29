@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Night I Almost Started Finasteride | iRESTORE Scalp Serum</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #1a1714;
+      --warm-white: #f7f4ef;
+      --cream: #ede8df;
+      --tan: #c9b99a;
+      --accent: #2d5a3d;
+      --accent-light: #3d7a54;
+      --muted: #7a7068;
+      --rule: #d4cec4;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      font-family: 'Lora', Georgia, serif;
+      background-color: var(--warm-white);
+      color: var(--ink);
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .sans { font-family: 'DM Sans', sans-serif; }
+
+    /* Masthead */
+    .masthead {
+      border-bottom: 1px solid var(--rule);
+      background: var(--warm-white);
+    }
+
+    .kicker {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.6875rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    /* Typography */
+    h1 {
+      font-family: 'Lora', Georgia, serif;
+      font-weight: 700;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+    }
+
+    h2 {
+      font-family: 'Lora', Georgia, serif;
+      font-weight: 600;
+      line-height: 1.25;
+      letter-spacing: -0.015em;
+    }
+
+    h3 {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+    }
+
+    .drop-cap::first-letter {
+      float: left;
+      font-family: 'Lora', Georgia, serif;
+      font-size: 4.25rem;
+      font-weight: 700;
+      line-height: 0.78;
+      margin-right: 0.1em;
+      margin-top: 0.08em;
+      color: var(--accent);
+    }
+
+    /* Rules */
+    .ornamental-rule {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      color: var(--tan);
+    }
+    .ornamental-rule::before,
+    .ornamental-rule::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--rule);
+    }
+
+    /* Pull quote */
+    .pull-quote {
+      border-left: 3px solid var(--accent);
+      padding-left: 1.5rem;
+      font-style: italic;
+      font-size: 1.2rem;
+      line-height: 1.6;
+      color: #3a3530;
+    }
+
+    /* Callout box */
+    .callout {
+      background: #edf3ef;
+      border: 1px solid #c2d9c9;
+      border-radius: 2px;
+    }
+
+    /* Ingredient card */
+    .ingredient-card {
+      background: var(--warm-white);
+      border: 1px solid var(--rule);
+      border-top: 3px solid var(--accent);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .ingredient-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.07);
+    }
+
+    /* CTA button */
+    .cta-btn {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      padding: 1rem 2.5rem;
+      border-radius: 2px;
+      text-decoration: none;
+      transition: background 0.2s ease, transform 0.15s ease;
+    }
+    .cta-btn:hover {
+      background: var(--accent-light);
+      transform: translateY(-1px);
+    }
+
+    .cta-section {
+      background: var(--ink);
+      color: var(--warm-white);
+    }
+
+    /* Timeline dot */
+    .timeline-item {
+      position: relative;
+      padding-left: 2rem;
+    }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.45rem;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+    .timeline-item::after {
+      content: '';
+      position: absolute;
+      left: 4px;
+      top: 1.2rem;
+      width: 2px;
+      bottom: -0.5rem;
+      background: var(--rule);
+    }
+    .timeline-item:last-child::after { display: none; }
+
+    /* Image placeholder */
+    .img-placeholder {
+      background: var(--cream);
+      border: 1px solid var(--rule);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      color: var(--muted);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.8125rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    /* Fade-in on scroll */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    /* Reading progress bar */
+    #progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 3px;
+      background: var(--accent);
+      z-index: 999;
+      transition: width 0.1s linear;
+    }
+
+    /* Sticky nav */
+    .sticky-nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: var(--warm-white);
+      border-bottom: 1px solid var(--rule);
+    }
+
+    /* Section divider */
+    .section-num {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.6875rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    blockquote {
+      margin: 0;
+    }
+
+    p { margin-bottom: 1.4rem; }
+    p:last-child { margin-bottom: 0; }
+
+    @media (max-width: 640px) {
+      .drop-cap::first-letter {
+        font-size: 3.25rem;
+      }
+      h1 { font-size: 2rem !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Reading progress -->
+  <div id="progress-bar" style="width:0%"></div>
+
+  <!-- ═══════════════════════════════════════════
+       MASTHEAD
+  ════════════════════════════════════════════ -->
+  <header class="masthead px-6 py-4">
+    <div class="max-w-3xl mx-auto flex items-center justify-between">
+      <span class="kicker">Independent Health Writing</span>
+      <span class="kicker">Hair Loss · Science · Real Talk</span>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════════
+       STICKY NAV (minimal)
+  ════════════════════════════════════════════ -->
+  <nav class="sticky-nav px-6 py-3 hidden md:block">
+    <div class="max-w-3xl mx-auto flex items-center justify-between">
+      <span class="sans text-xs text-gray-400 tracking-wide">The Night I Almost Started Finasteride</span>
+      <a href="#get-it" class="sans text-xs font-semibold text-white bg-green-800 hover:bg-green-700 px-4 py-1.5 rounded-sm transition-colors">
+        See the Serum →
+      </a>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════
+       HERO
+  ════════════════════════════════════════════ -->
+  <main>
+    <article class="max-w-3xl mx-auto px-6 pt-14 pb-8">
+
+      <!-- Kicker + Date -->
+      <div class="flex items-center gap-4 mb-6">
+        <span class="kicker">Personal Essay</span>
+        <span style="color:var(--rule)">—</span>
+        <span class="kicker">Hair Loss Treatment</span>
+      </div>
+
+      <!-- Headline -->
+      <h1 class="text-4xl md:text-5xl mb-6" style="color:var(--ink)">
+        The Night I Almost Started Finasteride (And What I Did Instead)
+      </h1>
+
+      <!-- Deck / subheadline -->
+      <p class="sans text-lg md:text-xl mb-8" style="color:var(--muted); line-height:1.55; font-weight:300;">
+        Three years on Minoxidil. One midnight Reddit spiral. And the follicle science that finally made the dependency make sense — and gave me a way out.
+      </p>
+
+      <!-- Byline -->
+      <div class="flex items-center gap-4 mb-8 pb-8" style="border-bottom: 1px solid var(--rule)">
+        <!-- IMAGE SUGGESTION 1: Author avatar — a candid, slightly blurred photo of a man in his late 30s,
+             casual shirt, natural indoor lighting. NOT a headshot. Should feel like a real person, not a stock model. -->
+        <div class="img-placeholder w-12 h-12 rounded-full flex-shrink-0">
+          <span style="font-size:0.6rem">Photo</span>
+        </div>
+        <div>
+          <p class="sans text-sm font-medium mb-0" style="color:var(--ink)">Written by a former Minoxidil user</p>
+          <p class="sans text-xs mb-0" style="color:var(--muted)">Independent writer · 3-year hair loss research journey</p>
+        </div>
+      </div>
+
+      <!-- Hero image -->
+      <!-- IMAGE SUGGESTION 2: A man in his late 30s sitting on the edge of his bed at night, wrinkled t-shirt,
+           dim warm lamp light. He's staring at a half-empty brown Minoxidil bottle on his nightstand.
+           His phone is face-down next to it. His expression is tired, not angry — just done.
+           Shot from a slight distance. Very real, very quiet. No studio lighting. -->
+      <div class="img-placeholder w-full h-72 md:h-96 mb-10 fade-in" style="border-radius:2px;">
+        <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+        <span>Image 1 — Bedroom nightstand scene (see suggestion above)</span>
+      </div>
+
+      <!-- ───────────────────────────────────────
+           PART 1 — THE OPENING STORY
+      ──────────────────────────────────────── -->
+      <section class="fade-in mb-14">
+        <div class="ornamental-rule mb-10">
+          <span class="section-num">Part One</span>
+        </div>
+
+        <p class="drop-cap">
+          I want to tell you about a Tuesday night in March, about two years into my Minoxidil routine. I was sitting on the edge of my bed at 11:40pm, phone in hand, reading a Reddit thread I'd already half-read twice before. The thread was called something like <em>"How did you finally get over your fear of Finasteride?"</em> It had 847 comments. I was on comment 200-something.
+        </p>
+
+        <p>
+          My Minoxidil bottle was on the nightstand. Half empty. There was a ring stain on the wood underneath it from months of the same placement, same routine, same quiet resignation.
+        </p>
+
+        <p>
+          I wasn't reading the thread because I wanted to start Finasteride.
+        </p>
+
+        <p>
+          I was reading it because I was <em>exhausted.</em> Exhausted from the routine. Exhausted from the greasy scalp two hours after application. Exhausted from the shedding phase that had convinced me, for about three panicked weeks, that I'd made everything dramatically worse. Exhausted from knowing — really knowing — that if I stopped the bottle on my nightstand, I would lose whatever ground I'd gained.
+        </p>
+
+        <blockquote class="pull-quote my-10 fade-in">
+          That's not a treatment. That's a hostage situation.
+        </blockquote>
+
+        <p>
+          And the worst part? I wasn't even unhappy with my results. My hair had stabilized. Maybe slightly improved. But every morning and every night, I was paying rent on those results. And the lease had no end date.
+        </p>
+
+        <p>
+          So there I was, reading about Finasteride. Not because I wanted to. Because I felt like I was running out of road.
+        </p>
+      </section>
+
+      <!-- ───────────────────────────────────────
+           PART 2 — THE MECHANISM EDUCATION
+      ──────────────────────────────────────── -->
+      <section class="fade-in mb-14">
+        <div class="ornamental-rule mb-10">
+          <span class="section-num">Part Two</span>
+        </div>
+
+        <h2 class="text-2xl md:text-3xl mb-6">What Nobody Tells You About the Minoxidil Dependency</h2>
+
+        <p>
+          Here's the thing they don't explain clearly when you start Minoxidil.
+        </p>
+
+        <p>
+          It works — for a lot of people, it genuinely works — by forcing your hair follicles into the growth phase through vasodilation. More blood flow, more nutrients, follicles that were quietly shutting down get a temporary reprieve. That's the mechanism. It's real. It's why it has decades of data behind it.
+        </p>
+
+        <p>But here's the part buried in the fine print:</p>
+
+        <p>
+          The moment you stop, the mechanism stops. Your follicles don't remember what they learned. There's no lasting change to the follicle environment. You were essentially keeping the lights on with a generator — the moment you unplug it, the room goes dark. Often faster and harder than it went dark the first time.
+        </p>
+
+        <!-- IMAGE SUGGESTION 3: Close-up of a white shower drain with a small cluster of dark hair caught in it,
+             water still slowly running. Slightly steamy, plain tile. Shot from slightly above.
+             Still, quiet, no person visible. The kind of image anyone with hair loss has stood over too long. -->
+        <div class="img-placeholder w-full h-56 my-10 fade-in" style="border-radius:2px;">
+          <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+          <span>Image 2 — Shower drain scene (see suggestion above)</span>
+        </div>
+
+        <p>
+          This is why stopping Minoxidil can feel, as one person described it, like <em>"watching everything collapse."</em>
+        </p>
+
+        <p>
+          It's also why the question I kept Googling — <em>"how do I stop Minoxidil without losing my hair"</em> — had no satisfying answer. Because the answer, inside that system, genuinely doesn't exist.
+        </p>
+
+        <div class="callout p-6 my-10 fade-in">
+          <p class="sans text-sm font-semibold mb-2" style="color:var(--accent); letter-spacing:0.05em; text-transform:uppercase;">The Core Problem</p>
+          <p class="mb-0" style="color:#2a3a2e;">
+            You either stay on it forever, or you accept the shed. That false binary is what had me reading Finasteride horror stories at midnight.
+          </p>
+        </div>
+
+        <h2 class="text-2xl md:text-3xl mb-6 mt-12">The Thing That Shifted My Thinking</h2>
+
+        <p>
+          A few weeks after that Tuesday night, I came across something that reframed the entire problem for me.
+        </p>
+
+        <p>Not a product. A mechanism.</p>
+
+        <p>
+          A researcher I stumbled across in a deep forum thread made a point I hadn't seen articulated clearly before. He wasn't talking about DHT. He wasn't talking about blood flow. He was talking about something earlier in the process — something <em>upstream</em> of both.
+        </p>
+
+        <p>He was talking about the <strong>follicle environment.</strong></p>
+
+        <p>
+          The reason people keep losing hair — even people doing everything right, even people on Minoxidil, even people who've invested thousands in laser devices — often isn't simply DHT or blood flow in isolation.
+        </p>
+
+        <p>It's that the scalp environment itself becomes increasingly hostile to follicle survival over time.</p>
+
+        <!-- Hostile environment list -->
+        <div class="my-10 pl-6 fade-in" style="border-left:3px solid var(--rule)">
+          <p class="section-num mb-4">The Silent Breakdown</p>
+          <ul class="space-y-3 sans text-base" style="color:var(--ink)">
+            <li class="flex gap-3"><span style="color:var(--accent); font-weight:600;">→</span> Shortened growth cycles</li>
+            <li class="flex gap-3"><span style="color:var(--accent); font-weight:600;">→</span> Chronic low-grade inflammation</li>
+            <li class="flex gap-3"><span style="color:var(--accent); font-weight:600;">→</span> Oxidative stress accumulating at the follicle level</li>
+            <li class="flex gap-3"><span style="color:var(--accent); font-weight:600;">→</span> Declining microcirculation that vasodilation can't fully fix</li>
+            <li class="flex gap-3"><span style="color:var(--accent); font-weight:600;">→</span> Gradual follicle miniaturization — which, untreated, becomes permanent</li>
+          </ul>
+        </div>
+
+        <blockquote class="pull-quote my-10 fade-in">
+          Most treatments address the symptoms of this process. Very few address the environment that's driving it.
+        </blockquote>
+
+        <p>
+          This is why someone can spend years on Minoxidil, see decent results, stop — and watch the hair disappear faster than it came. The underlying environment was never stabilized. The treatment was renting results, not building them.
+        </p>
+
+        <p>And it immediately raised a different question:</p>
+
+        <p class="text-xl font-medium italic" style="color:var(--accent)">
+          What would it look like to actually support the follicle environment, instead of just overriding it?
+        </p>
+      </section>
+
+      <!-- ───────────────────────────────────────
+           PART 3 — THE GRAVEYARD
+      ──────────────────────────────────────── -->
+      <section class="fade-in mb-14">
+        <div class="ornamental-rule mb-10">
+          <span class="section-num">Part Three</span>
+        </div>
+
+        <h2 class="text-2xl md:text-3xl mb-6">The Problem With Most "Natural Alternatives"</h2>
+
+        <p>
+          Before I tell you what I found, I need to address something.
+        </p>
+
+        <p>Because if you've spent any real time in the hair loss space, you already know the graveyard.</p>
+
+        <p>
+          Rosemary oil. Pumpkin seed capsules. Biotin megadoses. Castor oil. Saw palmetto. The $340 supplement with the celebrity endorsement and the clinical study funded entirely by the company that makes it.
+        </p>
+
+        <p>
+          I tried most of them. Not because I was naive — I knew the evidence was thin. But because when you're watching your hairline move and your options feel like "take a hormone drug forever" or "go bald," you start filling the gap with anything that sounds remotely reasonable.
+        </p>
+
+        <!-- Two-column contrast -->
+        <div class="grid md:grid-cols-2 gap-4 my-10 fade-in">
+          <div class="p-6" style="background:#fdf2f2; border:1px solid #e8c8c8; border-top:3px solid #c0392b; border-radius:2px;">
+            <p class="sans text-xs font-semibold mb-3" style="color:#c0392b; letter-spacing:0.1em; text-transform:uppercase;">The Graveyard</p>
+            <ul class="sans text-sm space-y-2" style="color:#5a2a2a;">
+              <li>A good marketing story</li>
+              <li>A before/after photo</li>
+              <li>A celebrity discount code</li>
+              <li>A study funded by the brand itself</li>
+            </ul>
+          </div>
+          <div class="p-6" style="background:#edf3ef; border:1px solid #c2d9c9; border-top:3px solid var(--accent); border-radius:2px;">
+            <p class="sans text-xs font-semibold mb-3" style="color:var(--accent); letter-spacing:0.1em; text-transform:uppercase;">What Actually Works</p>
+            <ul class="sans text-sm space-y-2" style="color:#1e3a28;">
+              <li>A plausible biological mechanism</li>
+              <li>Independent clinical data</li>
+              <li>Therapeutic ingredient concentrations</li>
+              <li>No hormonal interference</li>
+            </ul>
+          </div>
+        </div>
+
+        <p>
+          Redensyl falls in the first category. So does <strong>Capixyl</strong> — a biomimetic peptide complex that works on the DHT sensitivity of the follicle without touching systemic hormones. So does <strong>Adenosine</strong>, which has demonstrated growth phase extension in clinical settings. So do <strong>Copper Peptides</strong>, which support scalp tissue repair and follicle signaling at the cellular level.
+        </p>
+
+        <p>
+          What I was looking for was a formulation that combined these compounds — at therapeutic concentrations, not cosmetic trace amounts — in a single leave-on topical I could integrate into a daily routine without a greasy scalp or a forty-minute application window.
+        </p>
+
+        <p>That search is what led me to the <strong>iRESTORE Scalp Serum.</strong></p>
+      </section>
+
+      <!-- ───────────────────────────────────────
+           PART 4 — THE PRODUCT
+      ──────────────────────────────────────── -->
+      <section class="fade-in mb-14">
+        <div class="ornamental-rule mb-10">
+          <span class="section-num">Part Four</span>
+        </div>
+
+        <h2 class="text-2xl md:text-3xl mb-6">Why This Formulation Specifically</h2>
+
+        <!-- IMAGE SUGGESTION 4: The iRESTORE Scalp Serum bottle sitting on a clean bathroom shelf or stone surface,
+             soft natural morning light coming from the left. Simple background — maybe slightly out of focus white tile
+             or a wooden shelf. The serum is the only object in frame. Clean, real, not a studio product shot.
+             No lighting rigs. Should look like something someone actually owns and uses. -->
+        <div class="img-placeholder w-full h-64 mb-10 fade-in" style="border-radius:2px;">
+          <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+          <span>Image 3 — Product on shelf, natural light (see suggestion above)</span>
+        </div>
+
+        <p>
+          I want to be honest about my initial reaction, because it's probably similar to yours.
+        </p>
+
+        <p>
+          iRESTORE is primarily known for their laser devices. When I first saw they had a serum, my immediate thought was: <em>upsell.</em>
+        </p>
+
+        <p>The thing that changed my mind wasn't the branding. It was the ingredient panel.</p>
+
+        <!-- Ingredient cards -->
+        <div class="grid md:grid-cols-2 gap-4 my-10 fade-in">
+          <div class="ingredient-card p-5">
+            <p class="sans text-xs font-semibold mb-1" style="color:var(--accent); letter-spacing:0.1em; text-transform:uppercase;">Redensyl — 3%</p>
+            <p class="sans text-sm mb-0" style="color:var(--muted); line-height:1.55;">Therapeutic concentration. Activates follicle stem cells. Clinical results comparable to 5% Minoxidil for hair density — without the dependency mechanism.</p>
+          </div>
+          <div class="ingredient-card p-5">
+            <p class="sans text-xs font-semibold mb-1" style="color:var(--accent); letter-spacing:0.1em; text-transform:uppercase;">Capixyl — 2%</p>
+            <p class="sans text-sm mb-0" style="color:var(--muted); line-height:1.55;">Biomimetic peptide complex. Works on DHT sensitivity at the follicle level — without touching systemic hormones. No sexual side effects. No libido risk.</p>
+          </div>
+          <div class="ingredient-card p-5">
+            <p class="sans text-xs font-semibold mb-1" style="color:var(--accent); letter-spacing:0.1em; text-transform:uppercase;">Adenosine</p>
+            <p class="sans text-sm mb-0" style="color:var(--muted); line-height:1.55;">Demonstrated growth phase extension in clinical settings. Keeps follicles in the anagen phase longer — more time growing, less time resting or shedding.</p>
+          </div>
+          <div class="ingredient-card p-5">
+            <p class="sans text-xs font-semibold mb-1" style="color:var(--accent); letter-spacing:0.1em; text-transform:uppercase;">Copper Peptides + Biotin</p>
+            <p class="sans text-sm mb-0" style="color:var(--muted); line-height:1.55;">Scalp tissue repair and follicle signaling at the cellular level. Biotin for strand integrity and resilience. The environmental support layer most routines are missing.</p>
+          </div>
+        </div>
+
+        <p>
+          And critically — no propylene glycol. No heavy alcohols. No greasy carrier base that makes twice-daily application feel like punishment.
+        </p>
+
+        <blockquote class="pull-quote my-10 fade-in">
+          This is a formulation built around the mechanism, not around the marketing story. Those are different things. After enough time reading ingredient panels, you can tell the difference.
+        </blockquote>
+      </section>
+
+      <!-- ───────────────────────────────────────
+           PART 5 — THE TIMELINE
+      ──────────────────────────────────────── -->
+      <section class="fade-in mb-14">
+        <div class="ornamental-rule mb-10">
+          <span class="section-num">Part Five</span>
+        </div>
+
+        <h2 class="text-2xl md:text-3xl mb-8">What the First 90 Days Actually Looked Like</h2>
+
+        <p class="mb-10">I want to manage expectations here, because one of the things that erodes trust in this space is the gap between what marketing implies and what reality delivers.</p>
+
+        <!-- Timeline -->
+        <div class="space-y-8 mb-10">
+          <div class="timeline-item fade-in">
+            <p class="sans text-xs font-semibold mb-1" style="color:var(--accent); letter-spacing:0.1em; text-transform:uppercase;">Days 1–30 — Almost Nothing Visible</p>
+            <p class="sans text-sm mb-0" style="color:var(--muted); line-height:1.6;">The scalp felt different. Less irritated. A low-grade itchiness I'd normalized for years was quieter. I also noticed I wasn't dreading my morning routine. The serum absorbed cleanly. No residue. I applied it, gave it ninety seconds, and moved on. Compliance is everything with topical treatments — and anything that makes daily application effortless dramatically increases the chances you actually do it for the months it takes to see follicle-level results.</p>
+          </div>
+          <div class="timeline-item fade-in">
+            <p class="sans text-xs font-semibold mb-1" style="color:var(--accent); letter-spacing:0.1em; text-transform:uppercase;">Days 45–60 — Something Shifted</p>
+            <p class="sans text-sm mb-0" style="color:var(--muted); line-height:1.6;">Around week seven or eight, I noticed something in the shower. The hair on the wall — the count I'd been doing involuntarily every single morning for three years, the one I tried to tell myself I wasn't doing — was different. Not dramatically. Not overnight. But the volume was down. Meaningfully down. Reduced shedding means the follicles that are active are staying active longer. It's not regrowth of lost ground. It's protection of existing ground. For someone whose primary goal was <em>"I just want to keep what I still have"</em> — that is the whole game.</p>
+          </div>
+          <div class="timeline-item fade-in">
+            <p class="sans text-xs font-semibold mb-1" style="color:var(--accent); letter-spacing:0.1em; text-transform:uppercase;">Day 90 — Where I Actually Stand</p>
+            <p class="sans text-sm mb-0" style="color:var(--muted); line-height:1.6;">My hair has not dramatically transformed. I have not regrown my 22-year-old hairline. Anyone who promises you that from a topical serum alone is either lying or selling something designed for people who don't do their research. What I can tell you: the density at my crown looks and feels different. Fuller. Less transparent in harsh lighting. The shedding is consistently lower. And I am not on a drug. I am not suppressing a hormone. I am not owned by a bottle.</p>
+          </div>
+        </div>
+
+        <!-- IMAGE SUGGESTION 5: A man in his early 40s at a kitchen table on a Sunday morning.
+             Both hands around a coffee mug. Soft natural light from a window. On the table beside the mug:
+             a small dark serum bottle, cap off. No Minoxidil bottle. His posture is calm and settled.
+             Hair slightly imperfect at the temples — real, not styled. The feeling is quiet relief, not triumph. -->
+        <div class="img-placeholder w-full h-72 my-10 fade-in" style="border-radius:2px;">
+          <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+          <span>Image 4 — Sunday morning kitchen scene (see suggestion above)</span>
+        </div>
+
+        <blockquote class="pull-quote my-10 fade-in">
+          That's not a miracle story. It's a maintenance story. And for anyone who has ever Googled "how do I stop Minoxidil without losing everything" at midnight — a maintenance story that actually holds is worth more than a miracle story that falls apart the moment you stop.
+        </blockquote>
+      </section>
+
+      <!-- ───────────────────────────────────────
+           PART 6 — WHO IT'S FOR
+      ──────────────────────────────────────── -->
+      <section class="fade-in mb-14">
+        <div class="ornamental-rule mb-10">
+          <span class="section-num">Part Six</span>
+        </div>
+
+        <h2 class="text-2xl md:text-3xl mb-6">Who This Is Actually For</h2>
+
+        <p>I want to be direct here, because the iRESTORE Scalp Serum is not for everyone, and overclaiming helps nobody.</p>
+
+        <div class="space-y-4 my-10">
+          <div class="p-5 fade-in" style="background:var(--cream); border-left:3px solid var(--accent); border-radius:0 2px 2px 0;">
+            <p class="sans text-sm font-semibold mb-1" style="color:var(--ink)">Early to mid-stage thinning</p>
+            <p class="sans text-sm mb-0" style="color:var(--muted);">You still have active follicles worth protecting. This formulation is not going to rebuild ground that's already gone — but it's most powerful when there's still something to protect.</p>
+          </div>
+          <div class="p-5 fade-in" style="background:var(--cream); border-left:3px solid var(--accent); border-radius:0 2px 2px 0;">
+            <p class="sans text-sm font-semibold mb-1" style="color:var(--ink)">Currently on Minoxidil and hating the dependency</p>
+            <p class="sans text-sm mb-0" style="color:var(--muted);">This isn't a guaranteed swap, and any transition requires thought. But it's the most credible non-pharmaceutical support layer I've found for someone building toward an exit from that dependency cycle.</p>
+          </div>
+          <div class="p-5 fade-in" style="background:var(--cream); border-left:3px solid var(--accent); border-radius:0 2px 2px 0;">
+            <p class="sans text-sm font-semibold mb-1" style="color:var(--ink)">iRESTORE laser device owners</p>
+            <p class="sans text-sm mb-0" style="color:var(--muted);">The LLLT mechanism — ATP production, microcirculation, growth phase extension — works in direct synergy with what Redensyl and Adenosine are doing at the follicle level. You're not doubling up. You're covering different parts of the same biological problem.</p>
+          </div>
+          <div class="p-5 fade-in" style="background:var(--cream); border-left:3px solid var(--accent); border-radius:0 2px 2px 0;">
+            <p class="sans text-sm font-semibold mb-1" style="color:var(--ink)">Prevention-focused buyers who've noticed early thinning</p>
+            <p class="sans text-sm mb-0" style="color:var(--muted);">This is where topical follicle support has the highest ceiling. The earlier you stabilize the environment, the more you have to protect. Prevention is smarter than rescue — every time.</p>
+          </div>
+          <div class="p-5 fade-in" style="background:var(--cream); border-left:3px solid var(--accent); border-radius:0 2px 2px 0;">
+            <p class="sans text-sm font-semibold mb-1" style="color:var(--ink)">The natural-alternative graveyard survivor</p>
+            <p class="sans text-sm mb-0" style="color:var(--muted);">You tried the rosemary oil, the biotin stack, the beautiful packaging. You need something with actual clinical backing — without crossing into prescription territory.</p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl md:text-3xl mb-6 mt-14">One More Thing Before You Decide</h2>
+
+        <p>
+          I've been in enough hair loss forums to know the objection forming in your mind right now.
+        </p>
+
+        <p class="italic" style="color:var(--muted)">"If it works, why isn't everyone talking about it?"</p>
+
+        <p>It's a fair question. Here's the honest answer:</p>
+
+        <p>
+          The hair loss conversation is dominated by two categories: pharmaceutical treatments with massive marketing budgets, and gimmick products with influencer budgets. The middle ground — clinical-grade topical formulations with real mechanism science behind them — exists, but it's quiet.
+        </p>
+
+        <p>
+          It doesn't have a pharmaceutical rep visiting your dermatologist. It doesn't have a celebrity posting about it on Instagram with a discount code. What it has is the ingredient data. And for this audience — for people who make decisions based on mechanism and clinical reasoning rather than packaging and celebrity endorsements — that's the only currency that actually matters.
+        </p>
+      </section>
+
+    </article>
+
+    <!-- ═══════════════════════════════════════════
+         CTA SECTION
+    ════════════════════════════════════════════ -->
+    <section id="get-it" class="cta-section px-6 py-20 fade-in">
+      <div class="max-w-2xl mx-auto text-center">
+        <p class="sans text-xs tracking-widest mb-6" style="color:#8a9e8f; text-transform:uppercase; letter-spacing:0.2em;">The Bottom Line</p>
+
+        <h2 class="text-3xl md:text-4xl mb-6" style="color:var(--warm-white); font-weight:700; line-height:1.2;">
+          For someone who spent years on Minoxidil wondering if there was another way — this is the most honest answer I found.
+        </h2>
+
+        <p class="sans text-base mb-10" style="color:#a8b8ac; line-height:1.7; max-width:34rem; margin-left:auto; margin-right:auto;">
+          No prescription. No hormone suppression. No six-week shed to survive. A clinical formulation, built around a real mechanism, that you apply in under two minutes every morning.
+        </p>
+
+        <!-- Proof points -->
+        <div class="grid grid-cols-3 gap-6 mb-12 max-w-lg mx-auto">
+          <div class="text-center">
+            <p class="sans text-2xl font-semibold mb-1" style="color:var(--warm-white)">3%</p>
+            <p class="sans text-xs" style="color:#8a9e8f;">Redensyl — therapeutic dose</p>
+          </div>
+          <div class="text-center">
+            <p class="sans text-2xl font-semibold mb-1" style="color:var(--warm-white)">0</p>
+            <p class="sans text-xs" style="color:#8a9e8f;">Hormones altered</p>
+          </div>
+          <div class="text-center">
+            <p class="sans text-2xl font-semibold mb-1" style="color:var(--warm-white)">~2 min</p>
+            <p class="sans text-xs" style="color:#8a9e8f;">Daily application time</p>
+          </div>
+        </div>
+
+        <a href="#" class="cta-btn text-base mb-6 inline-block">
+          Check Current Availability &amp; Pricing →
+        </a>
+
+        <p class="sans text-xs mt-6" style="color:#6a7e6f;">
+          No subscription. No hidden charges. Ships free within the US.
+        </p>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         DISCLAIMER
+    ════════════════════════════════════════════ -->
+    <footer class="px-6 py-12" style="background:var(--cream); border-top:1px solid var(--rule);">
+      <div class="max-w-3xl mx-auto">
+        <p class="sans text-xs mb-4" style="color:var(--muted); line-height:1.7;">
+          <strong>Disclosure:</strong> This article contains affiliate links. If you purchase through these links, I may earn a commission at no additional cost to you. This does not influence my assessment of the product.
+        </p>
+        <p class="sans text-xs" style="color:var(--muted); line-height:1.7;">
+          <strong>Disclaimer:</strong> Results described reflect personal experience and independent research. Individual results will vary. iRESTORE Scalp Serum is a cosmetic topical product — it is not intended to diagnose, treat, cure, or prevent any disease. Statements on this page have not been evaluated by the Food and Drug Administration. Consult your physician before making changes to your hair care routine, particularly if you are currently using prescription treatments.
+        </p>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════
+       JAVASCRIPT
+  ════════════════════════════════════════════ -->
+  <script>
+    // Reading progress bar
+    window.addEventListener('scroll', () => {
+      const doc = document.documentElement;
+      const scrollTop = doc.scrollTop || document.body.scrollTop;
+      const scrollHeight = doc.scrollHeight - doc.clientHeight;
+      const progress = scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0;
+      document.getElementById('progress-bar').style.width = progress + '%';
+    });
+
+    // Fade-in on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
